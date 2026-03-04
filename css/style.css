@@ -1,0 +1,466 @@
+
+
+/* اتجاه عربي */
+body {
+    direction: rtl;
+    margin: 0;
+    overflow-x: hidden;
+    /* <-- أضف هذا السطر لمنع التمدد الجانبي */
+}
+
+
+/* Top Bar  */
+
+/* الشريط العلوي */
+.top-bar {
+    background-color: #fafafa;
+    border-bottom: 1px solid #969494;
+    padding: 15px 20px;
+    position: relative;
+}
+
+/* النص في المنتصف */
+.top-text {
+    text-align: center;
+    font-size: 20px;
+    color: #3b3b3b;
+}
+
+/*  end-Top Bar  */
+
+/* header1 */
+
+/* الهيدر العلوي */
+.header1 {
+    background: #fdfdfd;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* اللوجو */
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* الناف بار */
+.navbar {
+    background: #c47a2c;
+    padding: 16px 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar li {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar {
+    background: #c47a2c;
+    padding: 16px 30px;
+    position: relative;
+    z-index: 9999; /* فوق أي عنصر */
+}
+
+/* اجعل a كاملة قابلة للضغط */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    z-index: 10000; /* أهم حاجة */
+    display: inline-block; /* عشان يشمل المساحة كلها */
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: #cccccc;
+}
+
+/* END-Header */
+
+
+
+/* footer */
+
+.footer {
+    background: #f3ede5;
+    padding: 50px 8%;
+    direction: rtl;
+    font-family: Arial;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* اللوجو */
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-logo p {
+    color: #777;
+    line-height: 1.8;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* السوشيال */
+.social {
+    margin-top: 15px;
+}
+
+.social a {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    background: #c97a2b;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+/* بيانات التواصل */
+.footer-contact h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-contact p {
+    color: #777;
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* الجزء السفلي */
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #777;
+}
+
+@media (max-width:768px) {
+    .footer-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* end-footer */
+
+
+@media (max-width: 768px) {
+
+    /* 1. الهيدر والناف بار */
+    .header1 {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar li {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* 2. الهيرو (الصورة الكبيرة) */
+    .header2 {
+        height: 400px;
+        padding: 15px;
+    }
+
+    .content1 h2 {
+        font-size: 35px;
+    }
+
+    .content1 p {
+        font-size: 18px;
+        margin-top: -15px;
+    }
+
+    .content1 a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* 3. الأقسام النصية */
+    .section1 {
+        margin-top: 80px;
+        padding: 0 15px;
+    }
+
+    .imagee img {
+        width: 120px;
+    }
+
+    .h1111h h3 {
+        font-size: 30px;
+    }
+
+    .h1111h p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* 4. كروت الصور (تم تحديث الكلاس هنا) */
+    .promo-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .promo-card-item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .overlay {
+        right: 0;
+        top: auto;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .overlay h2 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    /* 5. المميزات (الأيقونات) */
+    .features {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    /* 6. شبكة المنتجات */
+    .products22 {
+        margin-top: 80px;
+    }
+
+    .products22 h1 {
+        font-size: 28px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* عمود واحد */
+    .card2 {
+        padding: 15px;
+    }
+
+    /* إظهار زر واتساب دائماً */
+    .whatsapp-btn {
+        transform: translate(-50%, -50%) scale(1);
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        top: 75%;
+    }
+
+    /* 7. قسم الشوكولاتة (صور ونصوص) */
+    .main-wrapper {
+        padding: 40px 5%;
+    }
+
+    .chocolate-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        /* gap: 30px; */
+    }
+
+    .content-side {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .description {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .image-side {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .img-box {
+        height: 250px;
+    }
+
+    .order-button {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    /* 8. القائمة (Menu) */
+    .menu {
+        padding: 30px 0;
+    }
+
+    .menu h1 {
+        font-size: 28px;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* .menu-item { flex-direction: column; align-items: center; text-align: center; width: 100%; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); } */
+    .text2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .img {
+        width: 70px;
+        height: 70px;
+        border-width: 3px;
+    }
+
+    /* 9. البانر */
+    .banner-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+        box-sizing: border-box;
+    }
+
+    .banner-image {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .banner-image img {
+        max-width: 90%;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    /* 10. آراء العملاء */
+    .testimonials-section {
+        padding: 30px 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+    }
+
+    /* تحويل السلايدر لقائمة عادية لسهولة القراءة */
+    .testimonials-container {
+        height: auto;
+        position: relative;
+    }
+
+    .testimonial-card {
+        position: relative;
+        opacity: 1;
+        pointer-events: auto;
+        margin-bottom: 20px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .dots-container {
+        display: none;
+    }
+
+    /* إخفاء النقاط */
+    /* 11. الفوتر */
+    .footer {
+        padding: 30px 5%;
+        text-align: center;
+    }
+
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo p {
+        font-size: 18px;
+    }
+
+    .footer-contact h3 {
+        font-size: 18px;
+    }
+
+    .footer-contact p {
+        font-size: 14px;
+    }
+
+    .social a {
+        margin: 0 5px;
+    }
+}
+
+
+
+
+
+

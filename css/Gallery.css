@@ -1,0 +1,112 @@
+
+
+
+/* menu */
+
+/* القسم */
+.menu {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.menu h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.menu .sub {
+    color: #888;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+/* الشبكة */
+.menu-container {
+    /* display:grid; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3, minmax(320px, 1fr)); */
+    gap: 1% 20px;
+    align-items: start;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+@media (max-width:991px) {
+    
+}
+
+/* العنصر */
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 33%;
+}
+
+@media (max-width:991px) {
+    .menu-item {
+
+        max-width: 49%;
+    }
+}
+
+@media (max-width:667px) {
+    .menu-item {
+        max-width: 100%;
+    }
+}
+
+/* السعر (يكون على الشمال) */
+.price1 {
+    background: #c97a2b;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* النص */
+.text2 {
+    flex: 1;
+    margin: 0 15px;
+    text-align: right;
+}
+
+.price1 {
+    background: #c97a2b;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.img {
+    width: 95px;
+    height: 95px;
+    border: 4px solid #c97a2b;
+    border-radius: 50%;
+    overflow: hidden;
+    /* مهم جداً — ده اللي بيقص الصورة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* يخلي الصورة تملأ الدائرة بدون ما تخرج */
+}
+
+/* end-menu */
+
+
+
+
